@@ -1,0 +1,170 @@
+body {
+	font-family: 'Lato', Arial, sans-serif !important;
+	height: 100%;
+	overflow: hidden;
+}
+
+section {
+	padding-top: auto;
+	width: 100%;
+	clear: left;
+	clear: right;
+}
+
+.contenido {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	background-color: #FFFFFF;
+	background-image: url('../images/sand.png');
+	background-repeat: none;
+	padding: 0px;
+	transition: all 0.3s;
+	box-sizing: border-box;
+	overflow: auto;
+}
+
+.contenido::-webkit-scrollbar {
+    width: 0.5em;
+}
+ 
+.contenido::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.3);
+}
+ 
+.contenido::-webkit-scrollbar-thumb {
+	background-color: #343a40;
+	outline: 1px solid #343a40;
+}
+
+#progress_bar {
+	height: 0.5em;
+	border-radius: 0;
+}
+
+#final_contenido {
+	width: 0;
+	height: 0;
+	margin-top: 0;
+    margin-bottom: 0;
+    border: 0;
+}
+
+#index_jumbotron {
+	margin-bottom: 0;
+	padding: 0;
+}
+
+#index_jumbotron img {
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.img_dinamic {
+	position: relative;
+}
+
+.img_dinamic span {
+    bottom: 4px;
+    display: block;
+    left: 0;
+    opacity: 0;
+    position: absolute;
+    z-index: 1;
+}
+
+.img_dinamic span button {
+    font-size: 15px;
+    width: 40px;
+    height: 40px;
+}
+
+.img_dinamic span {
+    opacity: 0.8;
+}
+
+.img_dinamic img {
+	transition-duration: 0.5s;
+	border-radius: 5%;
+}
+
+.img_dinamic img:hover,
+.img_dinamic img:active,
+.img_dinamic img:focus {
+	-ms-transform: scale(1.1);
+	-moz-transform: scale(1.1);
+	-webkit-transform: scale(1.1);
+	-o-transform: scale(1.1);
+	transform: scale(1.1);
+	transition-duration: 0.5s;
+	position: relative;
+	z-index: 100;
+	border-radius: 1%;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.4), 0 6px 20px 0 rgba(0, 0, 0, 0.39);
+}
+
+.img_opaco img:hover {
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%);
+    filter: grayscale(100%);
+}
+
+.fixed {
+	transition-duration: 1s;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	z-index: 1000;
+}
+
+/*Flecha para hacer la pagina hacia arriba*/
+.ir-arriba {
+	display: none;
+	background-repeat: no-repeat;
+	font-size: 20px;
+	color: #343a40;
+	cursor: pointer;
+	position: fixed;
+	bottom: 5px;
+	right: 10px;
+	z-index: 2;
+}
+
+.ir-arriba:hover {
+	color: #000;
+}
+
+@media (max-width: 599px) {
+	#index_jumbotron img {
+		width: 100% !important;
+	}
+}
+
+@media (max-width: 493px) {
+	body {
+		font-size: 12px;
+	}
+	.footer_contenido {
+		font-size: 12px;
+	}
+}
+
+@media (max-width: 383px) {
+	.footer_contenido {
+		font-size: 10px;
+	}
+}
+
+@media (max-width: 300px) {
+	body {
+		font-size: 11px;
+	}
+}
+
+@media (max-width: 283px) {
+	body {
+		font-size: 10px;
+	}
+}
