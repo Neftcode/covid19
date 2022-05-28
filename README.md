@@ -1,3 +1,3 @@
-# COVID19
+# COVID-19
  
-Proyecto de mapa de casos de COVID19 en Colombia y sus departamentos y Bogotá.
+Mapa de casos de COVID-19 (año 2020) en Colombia con sus departamentos y en la ciudad de Bogotá con sus localidades.
